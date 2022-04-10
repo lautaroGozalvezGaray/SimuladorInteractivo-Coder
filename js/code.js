@@ -1,7 +1,7 @@
 /* mensajes de bienvenida */
 
 alert("Bienvenido al simulador del seguro de tu auto");
-alert("a continuacion te pediremos unos datos");
+alert("A continuacion te pediremos algunos datos");
 
 /* Se piden datos al usuario */
 
@@ -9,9 +9,9 @@ let again = "";
 
 
 do{
-    let name = prompt("ingrese su nombre y apellido");
+    let name = prompt("Ingrese su nombre y apellido");
     let email = prompt("Ingrese su Email");
-    let city = prompt("ingrese su ciudad");
+    let city = prompt("Ingrese su ciudad");
     let brandCar = prompt("Ingrese la marca de su auto");
     let yearCar = parseInt(prompt("Ingrese el año de su auto"));
 
