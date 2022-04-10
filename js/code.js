@@ -47,6 +47,8 @@ do{
                 price = 25000;
                 break;
         }
+       
+
         return(price);
     }
 
@@ -55,15 +57,15 @@ do{
         if(yearCar==2022){
             priceYear=brand(brandCar);
         }else{
-            let year = (2022-yearCar)*2; /* cada año de antiguedad el auto se le suma un 2% al valor del seguro */
-            priceYear = brand(brandCar)-((brand(brandCar)*year)/100); /* aumento del 2% del valor del seguro dependiendo la antiguedad */;
+            let year = (2022-yearCar)*4; /* cada año de antiguedad el auto se le resta un 4% al valor del seguro */
+            priceYear = brand(brandCar)-((brand(brandCar)*year)/100); /* resta del 4% del valor del seguro dependiendo la antiguedad */;
         }
         return(priceYear);
     }
     
     alert("Señor/a: " + name + ", En base a los datos ingresados el costo del seguro para su auto es de: $ " + year(yearCar));
     alert("La cotizacíon fue envidada al Email: " + email);
-    again = prompt("Desea hacer una nueva cotización?  Ingrese SI o No");
+    again = prompt("Desea hacer una nueva cotización?  Ingrese si o no");
 }while(again!="no");
 
 
